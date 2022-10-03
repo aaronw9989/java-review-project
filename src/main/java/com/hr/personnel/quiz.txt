@@ -1,0 +1,34 @@
+
+
+What are the differences among the following access modifiers?
+- private - any member of the class can be visible only within that class
+- default (package-private) - member of the class is visible by any other class in the same package
+- protected - default scope _ member of the class is visible by any subclass even if the subclass is
+  in different package
+- public - any member of the class can be visible by any other class
+
+Why do you want to make your fields private?
+- if you make your fields non-private, any other class can access and change it
+- you lose maintainability of that code
+- instead you should provide getter/setter methods
+What is @Before annotation (in JUnit 4) for in your testing code?
+- test arrangement logic, runs before any tests
+
+Can a sub-class access private fields or methods of a parent class?
+- A sub-class can access the private fields. However, they can reach private fields using public or
+  protected methods
+- A sub-class can NOT access private methods
+
+Is the following code going to work? If no, can compiler detect the problem?
+(In other words, Is this compile time exception or runtime exception?)
+Employee employee = new SalariedEmployee(..);
+String name = employee.getName();
+double salary = employee.getMonthlySalary();
+No, the getMonthlySalary method is not a method of the class employee
+Note: that getMonthlySalary() method is defined in the SalaryEmployee class not in the Employee class
+
+Quiz
+Is it mandatory to use @Override annotation onto an "overriding method"?
+No, we use this for documentation purposes
+If not, why is the usage of it still recommended?
+What is the difference between "overriding" vs. "overloading" in Java code?

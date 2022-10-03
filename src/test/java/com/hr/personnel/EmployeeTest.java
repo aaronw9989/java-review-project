@@ -1,3 +1,5 @@
+package com.hr.personnel;
+
 import com.hr.personnel.Employee;
 import java.time.LocalDate;
 import org.assertj.core.api.Assertions;
@@ -13,9 +15,9 @@ public class EmployeeTest {
 
   @Before
   public void setUp() throws Exception {
-    this.employee = new Employee(
-        "Aaron",
-        LocalDate.of(2020, 01, 03));
+//    this.employee = new Employee(
+//        "Aaron",
+//        LocalDate.of(2020, 01, 03));
   }
 
   @Test
