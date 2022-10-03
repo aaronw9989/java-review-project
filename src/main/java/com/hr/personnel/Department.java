@@ -55,9 +55,9 @@ public class Department {
     return monthlyTotalCompensation;
   }
 
-//  public int getCurrentIndex() {
-//    return currentIndex;
-//  }
+  public int getCurrentIndex() {
+    return employees.size();
+  }
 
 //  public Employee[] getEmployees() {
 //    return employees;

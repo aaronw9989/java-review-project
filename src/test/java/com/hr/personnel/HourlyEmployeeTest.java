@@ -21,14 +21,6 @@ public class HourlyEmployeeTest {
   }
 
   @Test
-  public void computeMonthlyCompensation_should_return_monthly_salary() {
-    SalariedEmployee alice = new SalariedEmployee(
-        "Alice",
-        LocalDate.of(2020, 01, 02),
-        2000.0);
-  }
-
-  @Test
   public void getEmployeeInfo_should_return_name_hire_date_hourly_wage_and_hour_worked() {
     HourlyEmployee joe = new HourlyEmployee(
         "Joe",
